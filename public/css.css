@@ -1,0 +1,108 @@
+*{
+    margin:0;padding:0;
+}
+
+.hide
+{
+    display: none;
+}
+ul,li{
+    list-style: initial;
+}
+li{
+    margin-top: 10px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aa3366;
+    font-size:14px;
+    text-indent: 10px;
+}
+/*li:nth-child(2n){*/
+/*    text-align: right;*/
+/*}*/
+table{margin:10px auto;}
+#qipan{background: url("/img/bg.jpg") no-repeat;background-size:100% 100%;}
+#qipan td{/*border: 1px solid #151515; background: burlywood;*/height:42px;width:40px; background-size: 90% 90%; background-position: center center;background-repeat: no-repeat;}
+#content{background-color: #adbfd9;}
+#log{width: 100%;height: 580px;overflow: hidden;padding: 10px;box-sizing: border-box;background: burlywood;}
+#player{width: 100%;height: 50px;overflow: hidden;padding: 10px;box-sizing: border-box;
+    background:#c93756;text-align: center;}
+#palyerA,palyerB{line-height: 50px;  width: 150px; max-width: 150px;overflow: hidden;float: left}
+#form{
+    display: flex;
+    padding: 20px;
+}
+#form input{
+    background: #fcfcfc;
+    /* border: 1px solid #001b80; */
+    height: 40px;
+    line-height: 40px;
+    width: 555px;
+    border: 1px solid #1e64c9;
+    text-indent: 20px;
+    color:#000;
+    outline: none;
+    font-size:14px;
+}
+button{
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(0deg, #ffcc22 0%, #40c1ff 100%);
+    font-size:14px;
+    border: none;
+}
+.greenButton{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(0deg, #0f9c22 0%, #0cff99 100%);
+    font-size:14px;
+    border: none;
+    margin: 0 10px;
+}
+#change input{
+    background: #fcfcfc;
+    /* border: 1px solid #001b80; */
+    height: 40px;
+    line-height: 40px;
+    width: 90px;
+    border: 1px solid #1e64c9;
+    text-indent: 5px;
+    color:#000;
+    outline: none;
+    font-size:14px;
+}
+/**弹窗**/
+.boxShow
+{
+    width: 550px;
+    height: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -90px auto auto -250px; /* 设置弹出层绝对居中 */
+    background:cornsilk;
+    display: block;
+}
+.backLayer
+{
+    width: 100%;
+    height: 100%; /* 设置背景的高度 */
+    position: absolute;
+    background: #222533;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+/*选择房间*/
+#rom td{border: 1px solid #151515; height:42px;width:100px;background:lightblue; text-align: center;}

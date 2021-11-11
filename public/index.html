@@ -1,0 +1,49 @@
+<html>
+<head><title>五子棋</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+<!--房间-->
+
+<!--定义棋盘-->
+<table cellspacing="0"  cellpadding="0" id="content">
+    <tr>
+        <td>
+            <table cellspacing="0"  cellpadding="0" id="qipan">
+
+            </table>
+        </td>
+        <td style="width:300px;">
+            <div id="player">
+                <div id="palyerA" onclick="seat('A')"> <img src="./img/playA.png"><span>点击加入</span></div>
+                <div id="palyerB" onclick="seat('B')"> <img src="./img/playB.png"><span>点击加入</span></div>
+            </div>
+            <div id="log"></div>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <form id="form">
+                <input type="text" id="msg" size="64"/>
+                <button type="submit">Send</button>
+            </form>
+        </td>
+        <td id="change">
+            <div class="greenButton" onclick="ShowBox()">换房</div>
+            <div  id="changeName" class="greenButton">改名</div>
+            <input type="text" id="name" size="10"/>
+
+        </td>
+    </tr>
+</table>
+</body>
+<script src="js.js" type="text/javascript"></script>
+<script src="websocket.js" type="text/javascript"></script>
+
+<script>
+    rom = 0;
+    // ShowBox();
+</script>
+</html>
